@@ -1,0 +1,24 @@
+.auth {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: rgba($gray, 0.15);
+  }
+  & > * {
+    margin: 0 10px;
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__text {
+    display: flex;
+    align-content: center;
+    flex-grow: 1;
+
+    color: $gray;
+  }
+}

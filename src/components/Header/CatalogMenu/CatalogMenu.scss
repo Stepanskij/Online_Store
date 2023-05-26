@@ -1,0 +1,26 @@
+.catalog-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  &:hover {
+    background-color: rgba($gray, 0.15);
+  }
+  & > * {
+    margin: 0 10px;
+  }
+
+  &__img {
+    width: 24px;
+    height: 24px;
+    fill: $green;
+  }
+
+  &__text {
+    display: flex;
+    align-content: center;
+    flex-grow: 1;
+
+    font-size: 20px;
+    color: $green;
+  }
+}

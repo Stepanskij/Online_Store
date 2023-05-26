@@ -1,0 +1,74 @@
+.footer {
+  width: 100%;
+  max-width: 1240px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  & > :not(:first-child) {
+    margin: 0 0 0 10px;
+    max-width: 300px;
+  }
+
+  &__links {
+    & > * {
+      margin: 5px 0;
+      white-space: nowrap;
+    }
+
+    & > :first-child {
+      width: 30px;
+      height: 30px;
+    }
+    & > :not(:first-child) {
+      width: 100px;
+      height: 30px;
+    }
+  }
+
+  & > * {
+    display: flex;
+    flex-direction: column;
+    color: $gray;
+  }
+
+  &__information-colum-1 {
+    & > * {
+      cursor: pointer;
+      margin: 8px 0;
+      white-space: nowrap;
+    }
+    & > a:hover {
+      color: $green;
+    }
+  }
+
+  &__information-colum-2 {
+    & > * {
+      cursor: pointer;
+      margin: 8px 0;
+      white-space: nowrap;
+    }
+    & > a:hover {
+      color: $green;
+    }
+  }
+
+  &__information-colum-3 {
+    & > * {
+      margin: 8px 0;
+    }
+  }
+
+  &__email-link {
+    cursor: pointer;
+    &:hover {
+      color: $green;
+    }
+  }
+  &__telephone-link {
+    cursor: pointer;
+    &:hover {
+      color: $green;
+    }
+  }
+}

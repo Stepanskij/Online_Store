@@ -1,6 +1,14 @@
-.test-block {
-  margin: 0;
-  padding: 0;
-  background-color: #ccc;
-  box-sizing: border-box;
+@import "/src/shared/styles/index.scss";
+
+.app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+
+  &__content {
+    width: 1240px;
+    flex-grow: 1;
+  }
 }

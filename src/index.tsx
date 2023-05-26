@@ -7,10 +7,6 @@ import App from "./modules/App";
 
 import store from "./shared/store";
 
-import testTs from "./components/test";
-
-console.log(testTs);
-
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

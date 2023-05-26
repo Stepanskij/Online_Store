@@ -1,0 +1,17 @@
+.navigation {
+  display: flex;
+  > a,
+  div {
+    cursor: pointer;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+    user-select: none;
+
+    color: $gray;
+    &:hover {
+      color: $green;
+    }
+  }
+}

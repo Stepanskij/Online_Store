@@ -1,0 +1,24 @@
+.delivery-address {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+  color: $gray;
+  stroke: $gray;
+  fill: $gray;
+  &:hover {
+    color: $green;
+    stroke: $green;
+    fill: $green;
+  }
+
+  &__img {
+    width: 20px;
+    height: 16px;
+  }
+
+  &__text {
+    flex-grow: 1;
+  }
+}

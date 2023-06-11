@@ -61,12 +61,14 @@
 
   &__email-link {
     cursor: pointer;
+    color: #000000;
     &:hover {
       color: $green;
     }
   }
   &__telephone-link {
     cursor: pointer;
+    color: #000000;
     &:hover {
       color: $green;
     }

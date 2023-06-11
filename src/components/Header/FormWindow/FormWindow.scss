@@ -1,0 +1,136 @@
+.form-window {
+  display: grid;
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+
+  gap: 10px;
+
+  &__close-button {
+    cursor: pointer;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: -24px;
+    right: -24px;
+    justify-self: end;
+
+    transition: opacity 0.15s ease-in-out;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+  &__img {
+    width: 180px;
+    height: 180px;
+    justify-self: center;
+  }
+  &__img-text {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: normal;
+    line-height: 26px;
+
+    text-align: center;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 10px 20px;
+  }
+
+  &__address {
+    position: relative;
+    top: 7px;
+    grid-column: 1 / -1;
+  }
+  &__address + * {
+    grid-column: 1 / -1;
+  }
+
+  &__checkbox {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    grid-column: 1/-1;
+
+    transition: color 0.15s ease-in-out;
+  }
+  &__checkbox:hover {
+    color: $green;
+  }
+
+  &__checkbox-text {
+    margin: 0 0 0 10px;
+    &_active {
+      color: $green;
+    }
+  }
+
+  &__add-info-1 {
+    position: relative;
+    top: 7px;
+  }
+  &__add-info-2 {
+    position: relative;
+    top: 7px;
+  }
+  &__add-info-3 {
+    position: relative;
+    top: 7px;
+
+    &_active {
+      user-select: none;
+      position: relative;
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+
+  &__add-info-3-input {
+    &_active {
+      position: relative;
+      z-index: -1;
+      opacity: 0;
+    }
+  }
+
+  &__comment {
+    position: relative;
+    width: 100%;
+    top: 7px;
+    display: flex;
+    justify-content: space-between;
+
+    grid-column: 1/-1;
+  }
+  &__comment + * {
+    height: 60px;
+    grid-column: 1/-1;
+  }
+  &__comment-textarea {
+    padding: 6px 12px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: 1px solid rgba($gray, 0.3);
+
+    transition: border-color 0.15s ease-in-out;
+
+    resize: none;
+
+    &:focus {
+      outline: 0;
+      border-color: $gray;
+    }
+    &:hover {
+      border-color: $gray;
+    }
+  }
+
+  &__confirm {
+    grid-column: 1/-1;
+  }
+}

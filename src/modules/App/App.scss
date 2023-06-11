@@ -7,6 +7,10 @@
   align-items: center;
   flex-grow: 1;
 
+  &__header {
+    position: fixed;
+  }
+
   &__content {
     width: 1240px;
     flex-grow: 1;

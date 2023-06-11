@@ -11,7 +11,7 @@ import Basket from "./Basket/Basket";
 
 import SVG from "components/SVG";
 
-import logo from "./img/logo.svg";
+import logoSvg from "./img/logo.svg";
 
 import "./Header.scss";
 import { useState } from "react";
@@ -31,7 +31,7 @@ function Header() {
       </div>
       <div className={b("header-main")}>
         <div className={b("main")}>
-          <SVG className={b("logo")} svgProps={{ svg: logo }} />
+          <SVG className={b("logo")} svgProps={{ svg: logoSvg }} />
           <CatalogMenu />
           <div className={b("search-input")}>
             <SearchInput

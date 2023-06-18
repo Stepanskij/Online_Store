@@ -1,3 +1,4 @@
+import { Link, Outlet } from "react-router-dom";
 import block from "bem-cn";
 
 import "./Navigation.scss";
@@ -7,18 +8,22 @@ const b = block("navigation");
 function Navigation() {
   return (
     <div className={b()}>
-      <a className={b("delivery")} title="Доставка">
+      <Link className={b("delivery")} title="Доставка" to="/delivery">
         Доставка
-      </a>
-      <a className={b("pay")} title="Оплата заказов">
+      </Link>
+      <Link className={b("how-pay")} title="Оплата заказов" to="/how-pay">
         Оплата заказов
-      </a>
-      <a className={b("buy")} title="Как купить">
+      </Link>
+      <Link className={b("how-buy")} title="Как купить" to="/how-buy">
         Как купить
-      </a>
-      <div className={b("telephone")} title="Телефон поддержки">
+      </Link>
+      <Link
+        className={b("telephone")}
+        title="Телефон поддержки"
+        to="/telephone"
+      >
         8 888 888 88 88
-      </div>
+      </Link>
     </div>
   );
 }

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
-  <rect x="14.409" y="12.994" width="2" height="16.114" rx="1" transform="rotate(135 14.409 12.994)"
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+  <rect x="14.409" y="12.995" width="2" height="16.114" rx="1" transform="rotate(135 14.41 12.995)"
   />
-  <rect x="3.016" y="14.398" width="2" height="16.137" rx="1" transform="rotate(-135 3.016 14.398)"
+  <rect x="3.016" y="14.399" width="2" height="16.137" rx="1" transform="rotate(-135 3.016 14.399)"
   />
 </svg>

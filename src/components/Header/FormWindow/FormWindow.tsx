@@ -1,4 +1,4 @@
-import { TextareaHTMLAttributes, useState } from "react";
+import { useState } from "react";
 import block from "bem-cn";
 import { IFormWindowProps } from "./types";
 
@@ -15,8 +15,8 @@ import "./FormWindow.scss";
 const b = block("form-window");
 
 function FormWindow({ onClose }: IFormWindowProps) {
-  const [isPrivateHome, setIsPrivateHome] = useState<boolean>(false);
-  const [commentSymbols, setCommentSymbols] = useState<number>(0);
+  const [isPrivateHome, setIsPrivateHome] = useState(false);
+  const [commentSymbols, setCommentSymbols] = useState(0);
 
   return (
     <div className={b()}>

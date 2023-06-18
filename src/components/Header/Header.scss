@@ -50,8 +50,12 @@
 
   &__logo {
     cursor: pointer;
-    margin: 10px;
     fill: $green;
+  }
+  &__logo-svg {
+    & > * {
+      padding: 5px 0;
+    }
   }
 
   &__search-input {

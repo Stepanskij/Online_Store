@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import block from "bem-cn";
 
 import FormLink from "./FormLink";
@@ -31,7 +33,9 @@ function Header() {
       </div>
       <div className={b("header-main")}>
         <div className={b("main")}>
-          <SVG className={b("logo")} svgProps={{ svg: logoSvg }} />
+          <Link className={b("logo")} to="/">
+            <SVG className={b("logo-svg")} svgProps={{ svg: logoSvg }} />
+          </Link>
           <CatalogMenu />
           <div className={b("search-input")}>
             <SearchInput
